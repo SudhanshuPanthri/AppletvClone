@@ -10,10 +10,13 @@ function Header() {
         style={{
           fontSize: 34,
           margin: 10,
+          cursor: "pointer",
         }}
       />
       <h2>Apple TV+</h2>
-      <AccountCircleIcon style={{ fontSize: 34, margin: 10 }} />
+      <AccountCircleIcon
+        style={{ fontSize: 34, margin: 10, cursor: "pointer" }}
+      />
     </div>
   );
 }
