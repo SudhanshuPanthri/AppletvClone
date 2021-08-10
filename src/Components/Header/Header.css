@@ -1,11 +1,11 @@
-.header{
-    position:-webkit-sticky;
-    position: sticky;
-    top:0;
-    background: transparent;
-    background-color: transparent;
-    height:auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: rgba(17, 17, 17, 0.729);
+  height: auto;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
