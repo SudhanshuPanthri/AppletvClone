@@ -3,6 +3,7 @@ import "./Hero.css";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import axios from "../../axios";
 import requests from "../../Requests";
+import Row from "../Row/Row";
 
 function Hero() {
   const [movie, setMovie] = useState([]);
@@ -45,7 +46,18 @@ function Hero() {
           />
         </div>
       </div>
-      <div className="contentCards"></div>
+      <div className="contentCards">
+        <Row title="Apple TV Originals" fetchURL={requests.fetchTV} />
+        <Row title="Top Rated" fetchURL={requests.fetchTopRated} />
+        <Row title="Trending" fetchURL={requests.fetchTrending} />
+        <Row title="Action" fetchURL={requests.fetchActionMovies} />
+        <Row title="Comedy" fetchURL={requests.fetchComedyMovies} />
+        <Row title="Horror" fetchURL={requests.fetchHorrorMovies} />
+        <Row title="Mystery" fetchURL={requests.fetchMystery} />
+        <Row title="Sci-Fi" fetchURL={requests.fetchSciFi} />
+        <Row title="Animation" fetchURL={requests.fetchAnimation} />
+        <Row title="Western" fetchURL={requests.fetchWestern} />
+      </div>
     </>
   );
 }
